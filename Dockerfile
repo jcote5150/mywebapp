@@ -9,4 +9,5 @@ RUN apk add --no-cache curl
 EXPOSE 5000
 EXPOSE 8001
 COPY . .
+RUN chmod 644 app.py
 CMD ["flask", "run"]
